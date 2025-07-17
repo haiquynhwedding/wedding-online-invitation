@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'FTVDagine';
+  src: url('./fonts/1FTV-VIP-Dagine.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FTVSummerfun';
+  src: url('./fonts/1FTV-VIP-Summerfun.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FTVTimelessMemories';
+  src: url('./fonts/1FTV-VIP-Timeless-Memories.regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FTVReglarikItalic';
+  src: url('./fonts/1FTVVIPReglarik-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: rgb(64, 97, 35);
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#opening {
+  background-image: url('./images/background_opening.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: rgb(255, 255, 255);
+  font-family: "FTVDagine";
+  text-align: center;
+  min-height: 69vh;
+  position: relative;
+}
+
+#save-the-date {
+  background-image: url('./images/background_save_the_date.png');
+  background-position: bottom left;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+}
+
+#save-the-date .content-1 {
+  font-size: 30px;
+  line-height: 35px;
+  font-family: 'FTVTimelessMemories';
+}
+
+#save-the-date .content-2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'FTVSummerfun';
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+#save-the-date .content-2 .date {
+  display: block;
+  font-family: 'FTVTimelessMemories';
+}
+
+#save-the-date .image-save-the-date {
+  width: 70%;
+}
+
+#opening img,
+#calendar .image-calendar,
+#timeline .image-timeline,
+#timeline .image-camera,
+#timeline .image-rings,
+#timeline .image-cups,
+#our-memories img,
+#thankyou img {
+  width: 100%;
+}
+
+#family-information {
+  margin-top: 20px;
+}
+
+#family-information .row {
+  padding: 0 1rem !important;
+}
+
+#family-information .family-groom {
+  border-color: black;
+}
+
+#family-information p {
+  font-family: 'FTVTimelessMemories';
+  font-size: 12px;
+  margin-bottom: unset;
+}
+
+#family-information .title {
+  font-size: 17px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+#family-information .content-1 {
+  font-size: 25px;
+}
+
+#family-information .image-names {
+  width: 80%;
+  margin: 20px auto;
+}
+
+#family-information .image-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 85%;
+}
+
+#family-information .image-container .photo {
+  position: absolute;
+  width: 55%;
+  transition: all 0.3s ease;
+}
+
+#family-information .image-container .image-bride {
+  left: 10px;
+  top: 20px;
+  z-index: 1;
+}
+
+#family-information .image-container .image-groom {
+  right: 10px;
+  top: 50px;
+  z-index: 2;
+}
+
+#family-information .image-ring-heart {
+  width: 50%;
+}
+
+#wedding-information {
+  font-family: 'FTVTimelessMemories';
+  margin-top: 50px;
+  background-image: url('./images/background_wedding_information.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 50px;
+}
+
+#wedding-information p {
+  font-size: 22px;
+}
+
+#wedding-information .content-2 {
+  margin-bottom: unset;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+#wedding-information .date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wedding-information .date {
+  font-size: 60px;
+}
+
+#wedding-information .date-container .month,
+#wedding-information .date-container .year {
+  font-size: 20px;
+  border-top: 1px solid rgb(64, 97, 35);
+  border-bottom: 1px solid rgb(64, 97, 35);
+  line-height: 24px;
+  padding-top: 6px;
+}
+
+#wedding-information .date-container .month {
+  margin-right: 10px;
+}
+
+#wedding-information .date-container .year {
+  margin-left: 10px;
+}
+
+#wedding-information .content-3 {
+  margin-bottom: unset;
+}
+
+#wedding-information .address {
+  font-size: 15px;
+}
+
+#wedding-information .link-location {
+  color: rgb(64, 97, 35);
+  font-size: 20px;
+  text-underline-offset: 5px;
+}
+
+#wedding-information .image-location {
+  width: 5%;
+  margin-right: 5px;
+}
+
+#timeline {
+  font-family: 'FTVTimelessMemories';
+  font-size: 15px;
+  background-image: url('./images/background_timeline.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding-bottom: 100px;
+}
+
+#timeline .title {
+  margin-bottom: unset;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-size: 24px;
+}
+
+#our-memories {
+  background-color: rgba(64, 97, 35, 0.302);
+}
+
+#our-memories .line {
+  border-width: 1px;
+  border-color: rgb(64, 97, 35);
+  border-style: solid;
+  width: 20%;
+  margin: auto;
+}
+
+#countdown {
+  background-image: url('./images/background_count_down.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#countdown .title{
+  font-family: 'FTVSummerfun';
+  font-size: 45px;
+}
+
+#countdown #countdown-number {
+  font-family: 'FTVTimelessMemories';
+  font-size: 50px;
+}
+
+#thankyou .title {
+  font-family: 'FTVTimelessMemories';
+  font-size: 22px;
+}
