@@ -79,11 +79,9 @@ body {
 #opening img,
 #calendar .image-calendar,
 #timeline .image-timeline,
-#timeline .image-camera,
-#timeline .image-rings,
-#timeline .image-cups,
 #our-memories img,
-#thankyou img {
+#thankyou img,
+.col-timeline {
   width: 100%;
 }
 
@@ -221,18 +219,35 @@ body {
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: bottom right;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+}
+
+#timeline p {
+  font-size: 12px;
 }
 
 #timeline .title {
   margin-bottom: unset;
   text-decoration: underline;
   text-underline-offset: 5px;
-  font-size: 24px;
+  font-size: 19px;
+}
+
+#timeline .image-camera,
+#timeline .image-rings,
+#timeline .image-cups {
+  width: 80%;
 }
 
 #our-memories {
   background-color: rgba(64, 97, 35, 0.302);
+}
+
+#our-memories .title {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 #our-memories .line {
@@ -262,4 +277,56 @@ body {
 #thankyou .title {
   font-family: 'FTVTimelessMemories';
   font-size: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+	#save-the-date .content-1,
+  #save-the-date .content-2 {
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+  #family-information .title,
+  #wedding-information .link-location {
+    font-size: 35px;
+  }
+
+  #family-information p {
+    font-size: 24px;
+  }
+
+  #family-information .content-1 {
+    font-size: 50px;
+  }
+
+  #wedding-information p,
+  #timeline .title,
+  #thankyou .title {
+    font-size: 40px;
+  }
+
+  #wedding-information .content-2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  #wedding-information .date-container .month, 
+  #wedding-information .date-container .year {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  #wedding-information .date,
+  #countdown #countdown-number {
+    font-size: 90px;
+  }
+
+  #wedding-information .address,
+  #timeline p {
+    font-size: 25px;
+  }
+
+  #countdown .title {
+    font-size: 85px;
+  }
 }
