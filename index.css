@@ -81,6 +81,14 @@ body {
 
 #save-the-date .image-save-the-date {
   width: 70%;
+  opacity: 0;
+  transform: rotateY(90deg);
+  transition: all 2s ease-out
+}
+
+#save-the-date .image-save-the-date.active {
+  opacity: 1;
+  transform: rotateY(0deg);
 }
 
 #opening img,

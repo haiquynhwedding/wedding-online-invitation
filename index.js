@@ -53,6 +53,14 @@ $(document).ready(function() {
     }
   }
 
+  function animateImageSaveTheDateOnScroll() {
+    const imageSectionTop = $('.image-save-the-date').offset().top;
+    const windowTop = $(window).scrollTop() + $(window).height();
+    if (windowTop > imageSectionTop + 100) {
+      $('.image-save-the-date').addClass("active");
+    }
+  }
+
   // Gán data-shown cho tất cả section
   $('.fade-section').data('shown', false);
 
@@ -60,6 +68,7 @@ $(document).ready(function() {
   $(window).on('scroll', function () {
     checkSectionInView();
     animateImagesOnScroll();
+    animateImageSaveTheDateOnScroll();
   });
 
   // Gọi khi load trang (phòng trường hợp đã cuộn sẵn)
