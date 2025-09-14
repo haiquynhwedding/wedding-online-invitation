@@ -1,14 +1,23 @@
 $(document).ready(function () {
   var $music = $("#bg-music");
+  var musicPlayed = false;
 
-  // Chỉ play nhạc 1 lần khi user click đầu tiên
-  $(document).one("click", function() {
-    $music[0].play().then(function() {
-      console.log("🎵 Nhạc đang phát!");
-    }).catch(function(err) {
-      console.error("Không phát được nhạc:", err);
-    });
-  });
+  function playMusic() {
+    if (!musicPlayed) {
+      $music[0].play().then(function () {
+        console.log("🎵 Nhạc phát khi lướt trang!");
+        musicPlayed = true;
+      }).catch(function (err) {
+        console.error("Không phát được nhạc:", err);
+      });
+    }
+  }
+
+  // Bắt sự kiện lướt trang (scroll)
+  $(window).one("scroll", playMusic);
+
+  // Có thể thêm fallback: nếu user click vẫn phát nhạc
+  $(document).one("click", playMusic);
 
   function updateCountdown() {
     const now = new Date().getTime();
