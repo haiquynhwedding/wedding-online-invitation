@@ -1,4 +1,15 @@
-$(document).ready(function() {
+$(document).ready(function () {
+  var $music = $("#bg-music");
+
+  // Chỉ play nhạc 1 lần khi user click đầu tiên
+  $(document).one("click", function() {
+    $music[0].play().then(function() {
+      console.log("🎵 Nhạc đang phát!");
+    }).catch(function(err) {
+      console.error("Không phát được nhạc:", err);
+    });
+  });
+
   function updateCountdown() {
     const now = new Date().getTime();
     const targetDate = new Date("2025-11-08T18:00:00").getTime();
