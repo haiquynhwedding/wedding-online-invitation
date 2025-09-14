@@ -34,7 +34,7 @@ body {
 }
 
 #opening {
-  background-image: url('./images/background_opening.png');
+  /* background-image: url('./images/background_opening.png'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -63,8 +63,15 @@ body {
   font-size: 30px;
   line-height: 30px;
   font-family: 'FTVSummerfun';
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#save-the-date .content-3 {
+  font-size: 30px;
+  line-height: 35px;
+  font-family: 'FTVTimelessMemories';
+  margin-bottom: 30px;
 }
 
 #save-the-date .content-2 .date {
@@ -127,7 +134,22 @@ body {
 #family-information .image-container .photo {
   position: absolute;
   width: 55%;
-  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 3s ease;
+}
+
+#family-information .image-container .hidden-left {
+  transform: translateX(-200px);
+}
+
+#family-information .image-container .hidden-right {
+  transform: translateX(200px);
+}
+
+#family-information .image-container .visible {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 #family-information .image-container .image-bride {
@@ -281,7 +303,8 @@ body {
 
 @media only screen and (min-width: 768px) {
 	#save-the-date .content-1,
-  #save-the-date .content-2 {
+  #save-the-date .content-2,
+  #save-the-date .content-3 {
     font-size: 55px;
     line-height: 60px;
   }
@@ -329,4 +352,15 @@ body {
   #countdown .title {
     font-size: 85px;
   }
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 4s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

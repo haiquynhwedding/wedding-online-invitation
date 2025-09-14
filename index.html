@@ -13,10 +13,12 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-    <section class="opening" id="opening">
+    <iframe src="./musics/le_duong_background.mp3" width="1" height="1" frameborder="0" allowfullscreen allow="autoplay" style="display: none;"></iframe>
+
+    <section class="opening fade-section" id="opening">
         <img src="./images/image_opening.png" alt="image_opening">
     </section>
-    <section class="save-the-date text-center" id="save-the-date">
+    <section class="save-the-date text-center fade-section" id="save-the-date">
         <p class="content-1">
             QUYẾT ĐỊNH BÊN NHAU <br> TRỌN ĐỜI
         </p>
@@ -26,12 +28,15 @@
                 08.11.2025
             </span>
         </p>
+        <p class="content-3">
+            Thân mời <span class="name-guest"></span>
+        </p>
         <img class="image-save-the-date" src="./images/image_save_the_date.png" alt="save-the-date">
     </section>
-    <section class="calendar" id="calendar">
+    <section class="calendar fade-section" id="calendar">
         <img class="image-calendar" src="./images/image_calendar.png" alt="calendar">
     </section>
-    <section class="family-information text-center" id="family-information">
+    <section class="family-information text-center fade-section" id="family-information">
         <div class="container">
             <div class="row align-items-start text-center">
                 <div class="col-6 text-center family-groom border-end">
@@ -63,12 +68,12 @@
         </p>
         <img class="image-names" src="./images/image_names.png" alt="names">
         <div class="image-container">
-            <img class="photo image-bride" src="./images/image_bride.png" alt="bride">
-            <img class="photo image-groom" src="./images/image_groom.png" alt="groom">
+            <img class="photo image-bride hidden-left" src="./images/image_bride.png" alt="bride">
+            <img class="photo image-groom hidden-right" src="./images/image_groom.png" alt="groom">
         </div>
         <img class="image-ring-heart" src="./images/image_ring_heart.png" alt="ring-heart">
     </section>
-    <section class="wedding-information text-center" id="wedding-information">
+    <section class="wedding-information text-center fade-section" id="wedding-information">
         <p class="content-1">
             LỄ THÀNH HÔN ĐƯỢC TỔ CHỨC<br>VÀO LÚC 18 GIỜ 00 PHÚT
         </p>
@@ -97,7 +102,7 @@
             VỊ TRÍ NHÀ HÀNG
         </a>
     </section>
-    <section class="timeline" id="timeline">
+    <section class="timeline fade-section" id="timeline">
         <img class="image-timeline" src="./images/image_timeline.png" alt="image_timeline">
         <div class="mt-5">
             <div class="row col-timeline">
@@ -148,7 +153,7 @@
             </div>
         </div>
     </section>
-    <section class="our-memories pt-5 pb-3" id="our-memories">
+    <section class="our-memories pt-5 pb-3 fade-section" id="our-memories">
         <img class="title" src="./images/image_our_memories.png" alt="image_our_memories">
         <div class="mx-2 mb-2 mt-5">
             <img src="./images/group_our_memories.png" alt="group_our_memories">
@@ -156,7 +161,7 @@
         <img class="mt-2 mb-4" src="./images/our_memories_7.png" alt="our_memories_7">
         <div class="line"></div>
     </section>
-    <section class="countdown pt-5 pb-3" id="countdown">
+    <section class="countdown pt-5 pb-3 fade-section" id="countdown">
         <div class="title text-center">
             Countdown
         </div>
@@ -166,7 +171,7 @@
             <span id="seconds">00</span>
         </div>
     </section>
-    <section class="thankyou" id="thankyou">
+    <section class="thankyou fade-section" id="thankyou">
         <div class="text-center title">
             Rất hân hạnh được đón tiếp !
         </div>
