@@ -290,7 +290,7 @@ body {
 
 #countdown {
   background-image: url('./images/background_count_down.png');
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: contain;
 }
 
