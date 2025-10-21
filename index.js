@@ -113,7 +113,9 @@ $(document).ready(function () {
     '8ydfOC': "Gia đình em Nghiệp",
     'dlaybB': "Gia đình em Lời",
     'Nf61Aw': "Gia đình bạn Đông",
-    'HmFQ0I': "Gia đình bạn Phi Long"
+    'HmFQ0I': "Gia đình bạn Phi Long",
+    'GPAL1T': "Bạn Hân và người thương",
+    'Y3Bwia': "Em Hồng và người thương"
   };
 
   if (queryString === "" || queryString === undefined || guestList[queryString] === undefined) {
