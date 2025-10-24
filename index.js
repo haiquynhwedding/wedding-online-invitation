@@ -114,8 +114,10 @@ $(document).ready(function () {
     'dlaybB': "Gia đình em Lời",
     'Nf61Aw': "Gia đình bạn Đông",
     'HmFQ0I': "Gia đình bạn Phi Long",
-    'GPAL1T': "Bạn Hân và người thương",
-    'Y3Bwia': "Em Hồng và người thương"
+    'GPAL1T': "Bạn Hân",
+    'Y3Bwia': "Em Hồng và người thương",
+    'Vp7izj': "Anh Huy và người thương",
+    'AApZON': "Bạn Bảo và người thương"
   };
 
   if (queryString === "" || queryString === undefined || guestList[queryString] === undefined) {
