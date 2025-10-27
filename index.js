@@ -117,7 +117,8 @@ $(document).ready(function () {
     'GPAL1T': "Bạn Hân",
     'Y3Bwia': "Em Hồng và người thương",
     'Vp7izj': "Anh Huy và người thương",
-    'AApZON': "Bạn Bảo và người thương"
+    'AApZON': "Bạn Bảo và người thương",
+    'Je18OG': "Gia đình em Lộc và Trang"
   };
 
   if (queryString === "" || queryString === undefined || guestList[queryString] === undefined) {
