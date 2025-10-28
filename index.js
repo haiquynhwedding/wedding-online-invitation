@@ -118,7 +118,8 @@ $(document).ready(function () {
     'Y3Bwia': "Em Hồng và người thương",
     'Vp7izj': "Anh Huy và người thương",
     'AApZON': "Bạn Bảo và người thương",
-    'Je18OG': "Hai em Lộc và Trang"
+    'Je18OG': "Hai em Lộc và Trang",
+    'jRCw64': "Bác Thanh Nga"
   };
 
   if (queryString === "" || queryString === undefined || guestList[queryString] === undefined) {
