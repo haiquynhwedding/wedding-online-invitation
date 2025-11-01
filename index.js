@@ -119,7 +119,10 @@ $(document).ready(function () {
     'Vp7izj': "Anh Huy và người thương",
     'AApZON': "Bạn Bảo và người thương",
     'Je18OG': "Hai em Lộc và Trang",
-    'jRCw64': "Bác Thanh Nga"
+    'jRCw64': "Bác Thanh Nga",
+    'tssN7l': "Bạn Toàn",
+    '6XosXS': "Bạn Tú và người thương",
+    'Z3mQeg': "Bạn Phong"
   };
 
   if (queryString === "" || queryString === undefined || guestList[queryString] === undefined) {
